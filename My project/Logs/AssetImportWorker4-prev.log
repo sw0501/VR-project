@@ -1,0 +1,637 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.22f1 (b6c551784ba3) revision 11978065'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22000) 64bit Professional' Language: 'ko' Physical Memory: 32472 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.22f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker4
+-projectPath
+C:/Users/user/Documents/GitHub/VR-project/My project
+-logFile
+Logs/AssetImportWorker4.log
+-srvPort
+52849
+Successfully changed project path to: C:/Users/user/Documents/GitHub/VR-project/My project
+C:/Users/user/Documents/GitHub/VR-project/My project
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [19432] Host "[IP] 169.254.99.227 [Port] 0 [Flags] 2 [Guid] 1764789984 [EditorId] 1764789984 [Version] 1048832 [Id] WindowsEditor(7,sw0501) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [19432] Host "[IP] 169.254.99.227 [Port] 0 [Flags] 2 [Guid] 1764789984 [EditorId] 1764789984 [Version] 1048832 [Id] WindowsEditor(7,sw0501) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 231.24 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 1.04 ms.
+Initialize engine version: 2021.3.22f1 (b6c551784ba3)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.22f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/user/Documents/GitHub/VR-project/My project/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2520)
+    Vendor:   NVIDIA
+    VRAM:     6023 MB
+    Driver:   30.0.15.1165
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.22f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.22f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.22f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56416
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.22f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.22f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.006829 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Refreshing native plugins compatible for Editor in 131.27 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.852 seconds
+Domain Reload Profiling:
+	ReloadAssembly (853ms)
+		BeginReloadAssembly (124ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (598ms)
+			LoadAssemblies (120ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (133ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (39ms)
+			SetupLoadedEditorAssemblies (360ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (33ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (131ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (136ms)
+				ProcessInitializeOnLoadMethodAttributes (57ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.014091 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Refreshing native plugins compatible for Editor in 1.46 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Package Manager log level set to [2]
+Mono: successfully reloaded assembly
+- Completed reload, in  1.125 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1126ms)
+		BeginReloadAssembly (120ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (19ms)
+		EndReloadAssembly (903ms)
+			LoadAssemblies (118ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (245ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (68ms)
+			SetupLoadedEditorAssemblies (448ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (21ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (86ms)
+				ProcessInitializeOnLoadAttributes (309ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (14ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 1.38 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+Unloading 4653 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 56 unused Assets / (204.0 KB). Loaded Objects now: 5089.
+Memory consumption went from 169.7 MB to 169.5 MB.
+Total: 5.212100 ms (FindLiveObjects: 0.401200 ms CreateObjectMapping: 0.320500 ms MarkObjects: 4.233100 ms  DeleteObjects: 0.256000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 478732.310220 seconds.
+  path: Assets/Oculus/VR/Scenes/TEST.unity
+  artifactKey: Guid(b7d1a7e60e7ab66418a5b191e596a3f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/VR/Scenes/TEST.unity using Guid(b7d1a7e60e7ab66418a5b191e596a3f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c531377d6fdec40985db4bb15a9f24d9') in 0.032359 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 125.624364 seconds.
+  path: Assets/Oculus/VR/Plugins
+  artifactKey: Guid(e1f06b56b3e7614419c5db24e2262938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/VR/Plugins using Guid(e1f06b56b3e7614419c5db24e2262938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac98b707206aa66983f62c8163aa2281') in 0.014921 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.003401 seconds.
+  path: Assets/Oculus/VR/Prefabs/OVRTrackedKeyboard
+  artifactKey: Guid(591aafe2432771d489ba31e19a124ce6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/VR/Prefabs/OVRTrackedKeyboard using Guid(591aafe2432771d489ba31e19a124ce6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c553dc0fd59484e7e12d08ac6735aa7') in 0.012454 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006431 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Refreshing native plugins compatible for Editor in 1.46 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.502 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1504ms)
+		BeginReloadAssembly (151ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (1239ms)
+			LoadAssemblies (120ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (298ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (70ms)
+			SetupLoadedEditorAssemblies (653ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (42ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (123ms)
+				ProcessInitializeOnLoadAttributes (437ms)
+				ProcessInitializeOnLoadMethodAttributes (33ms)
+				AfterProcessingInitializeOnLoad (15ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 10.24 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+Unloading 4574 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (163.1 KB). Loaded Objects now: 5092.
+Memory consumption went from 162.0 MB to 161.8 MB.
+Total: 5.081000 ms (FindLiveObjects: 0.413900 ms CreateObjectMapping: 0.357100 ms MarkObjects: 4.085800 ms  DeleteObjects: 0.220900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.019990 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Refreshing native plugins compatible for Editor in 1.60 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.16 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.548 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1549ms)
+		BeginReloadAssembly (150ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (1307ms)
+			LoadAssemblies (120ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (440ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (70ms)
+			SetupLoadedEditorAssemblies (589ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (33ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (104ms)
+				ProcessInitializeOnLoadAttributes (404ms)
+				ProcessInitializeOnLoadMethodAttributes (29ms)
+				AfterProcessingInitializeOnLoad (15ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 16.63 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.14 ms.
+Unloading 4574 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (163.2 KB). Loaded Objects now: 5095.
+Memory consumption went from 162.2 MB to 162.0 MB.
+Total: 4.917700 ms (FindLiveObjects: 0.501600 ms CreateObjectMapping: 0.321600 ms MarkObjects: 3.885100 ms  DeleteObjects: 0.207300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005959 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Refreshing native plugins compatible for Editor in 2.06 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.41 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.684 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1685ms)
+		BeginReloadAssembly (156ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (43ms)
+		EndReloadAssembly (1393ms)
+			LoadAssemblies (123ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (460ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (77ms)
+			SetupLoadedEditorAssemblies (629ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (40ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (108ms)
+				ProcessInitializeOnLoadAttributes (433ms)
+				ProcessInitializeOnLoadMethodAttributes (29ms)
+				AfterProcessingInitializeOnLoad (15ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 11.55 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 4574 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (171.1 KB). Loaded Objects now: 5098.
+Memory consumption went from 162.2 MB to 162.0 MB.
+Total: 4.422900 ms (FindLiveObjects: 0.328500 ms CreateObjectMapping: 0.170200 ms MarkObjects: 3.716400 ms  DeleteObjects: 0.206600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013327 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Refreshing native plugins compatible for Editor in 1.54 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.18 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.515 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1516ms)
+		BeginReloadAssembly (146ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (1277ms)
+			LoadAssemblies (123ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (425ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (65ms)
+			SetupLoadedEditorAssemblies (586ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (36ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (103ms)
+				ProcessInitializeOnLoadAttributes (403ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 16.57 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.25 ms.
+Unloading 4574 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (163.1 KB). Loaded Objects now: 5101.
+Memory consumption went from 162.2 MB to 162.0 MB.
+Total: 4.868000 ms (FindLiveObjects: 0.477600 ms CreateObjectMapping: 0.302800 ms MarkObjects: 3.896300 ms  DeleteObjects: 0.189900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008548 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Refreshing native plugins compatible for Editor in 1.40 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.20 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.574 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1575ms)
+		BeginReloadAssembly (160ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (37ms)
+		EndReloadAssembly (1324ms)
+			LoadAssemblies (130ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (427ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (75ms)
+			SetupLoadedEditorAssemblies (610ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (39ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (114ms)
+				ProcessInitializeOnLoadAttributes (411ms)
+				ProcessInitializeOnLoadMethodAttributes (31ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 12.12 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Unloading 4574 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (163.1 KB). Loaded Objects now: 5104.
+Memory consumption went from 162.2 MB to 162.1 MB.
+Total: 4.439500 ms (FindLiveObjects: 0.400800 ms CreateObjectMapping: 0.200000 ms MarkObjects: 3.573900 ms  DeleteObjects: 0.263000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 47.64 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.23 ms.
+Unloading 49 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (158.9 KB). Loaded Objects now: 5104.
+Memory consumption went from 70.3 MB to 70.2 MB.
+Total: 9.810100 ms (FindLiveObjects: 0.773000 ms CreateObjectMapping: 0.505700 ms MarkObjects: 8.110800 ms  DeleteObjects: 0.418200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 51.61 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.20 ms.
+Unloading 49 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (159.3 KB). Loaded Objects now: 5104.
+Memory consumption went from 69.3 MB to 69.2 MB.
+Total: 8.206300 ms (FindLiveObjects: 0.549900 ms CreateObjectMapping: 0.342400 ms MarkObjects: 6.797500 ms  DeleteObjects: 0.513700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1769.396258 seconds.
+  path: Assets/Oculus/VR/Prefabs/Cursor_Timer.prefab
+  artifactKey: Guid(5a7682c244a150b49965c007720bdbb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/VR/Prefabs/Cursor_Timer.prefab using Guid(5a7682c244a150b49965c007720bdbb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e39f88eea1c3dfcfa5c2631214444bbd') in 0.631432 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.051423 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Refreshing native plugins compatible for Editor in 2.32 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.28 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  3.238 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3240ms)
+		BeginReloadAssembly (386ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (98ms)
+		EndReloadAssembly (2520ms)
+			LoadAssemblies (282ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (801ms)
+			ReleaseScriptCaches (5ms)
+			RebuildScriptCaches (118ms)
+			SetupLoadedEditorAssemblies (1138ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (60ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (241ms)
+				ProcessInitializeOnLoadAttributes (745ms)
+				ProcessInitializeOnLoadMethodAttributes (64ms)
+				AfterProcessingInitializeOnLoad (24ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (18ms)
+Platform modules already initialized, skipping
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 20.83 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.17 ms.
+Unloading 4574 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (169.6 KB). Loaded Objects now: 5116.
+Memory consumption went from 165.0 MB to 164.8 MB.
+Total: 7.904600 ms (FindLiveObjects: 0.680800 ms CreateObjectMapping: 0.448000 ms MarkObjects: 6.460400 ms  DeleteObjects: 0.312900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013094 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Refreshing native plugins compatible for Editor in 1.27 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.19 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.280 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1281ms)
+		BeginReloadAssembly (165ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (991ms)
+			LoadAssemblies (142ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (383ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (380ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (23ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (81ms)
+				ProcessInitializeOnLoadAttributes (251ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 5.33 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 4450 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 141 unused Assets / (157.9 KB). Loaded Objects now: 5026.
+Memory consumption went from 162.6 MB to 162.4 MB.
+Total: 4.139600 ms (FindLiveObjects: 0.274500 ms CreateObjectMapping: 0.186900 ms MarkObjects: 3.509100 ms  DeleteObjects: 0.167100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
