@@ -3,24 +3,26 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
-    public Text playerStateText;
-    public void onPlayerDead()
+    public int Scene_number;
+
+    public void Awake()
     {
-        Debug.Log("Dead Event!!!");
-        playerStateText.text = "You Die!!!";
+        DontDestroyOnLoad(this);
     }
 
-    public void onPlayerAlive()
+    public void LoadScene()
     {
-        Debug.Log("Alive Event!!!");
-        playerStateText.text = "You Alive!!!";
-    }
-
-    private void Start()
-    {
-        playerStateText.text = "You Alive!!!";
+        if(Scene_number < 4)
+        {
+            SceneManager.LoadScene(Scene_number + 1);
+        }
+        else
+        {
+            SceneManager.LoadScene(1);
+        }
     }
 }
