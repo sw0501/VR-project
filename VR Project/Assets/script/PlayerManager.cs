@@ -7,13 +7,13 @@ using UnityEngine.XR;
 public class PlayerManager : MonoBehaviour
 {
 
+    private XRController xr;
+
     //Scene 이동 시 오브젝트 파괴 X
     private void Awake()
     {
         DontDestroyOnLoad(this);
     }
-
-    private XRController xr;
 
     //Scene 시작 시 Player Controller 저장
     void Start()
@@ -22,12 +22,12 @@ public class PlayerManager : MonoBehaviour
     }
 
     //컨트롤러에 진동 
-    void ActivateHaptic()
+    public void ActivateHaptic()
     {
         xr.SendHapticImpulse(0.7f, 2f);
     }
-
-    void EffectController()
+    
+    public void EffectController()
     {
 
     }
