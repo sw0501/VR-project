@@ -4,11 +4,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerEvents : MonoBehaviour
 {
     public UnityEvent onPlayerDead;
     public UnityEvent onPlayerAlive;
+    public UnityEvent FullGauge;
+    public Text Tutorial_intro;
+    int guage = 0;
 
     private void Dead()
     {
@@ -23,7 +27,7 @@ public class PlayerEvents : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         Debug.Log("Colide!!");
-        SceneManager.LoadScene(1);
+        //SceneManager.LoadScene(1);
         Dead();
     }
 
@@ -31,6 +35,27 @@ public class PlayerEvents : MonoBehaviour
     {
         Debug.Log("Exit!!");
         Alive();
+    }
+
+    private void Update()
+    {
+        /*
+        if(guage == 100)
+        {
+            FullGauge.Invoke();
+            
+        }
+        */
+    }
+
+    public void SetunVisible()
+    {
+        Tutorial_intro.text = "You are Dead";
+    }
+
+    public void SetVisible()
+    {
+        Tutorial_intro.text = "You are Alive";
     }
 
 }
