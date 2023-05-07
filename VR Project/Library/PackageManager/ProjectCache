@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638185411214573390
+      ticks: 638187802618277807
     m_Hash: 3203306603
   m_LockFileStatus:
     m_FilePath: C:/Users/user/Documents/GitHub/VR-project/VR Project/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638185411214573390
+      ticks: 638187802618288337
     m_Hash: 595169318
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
