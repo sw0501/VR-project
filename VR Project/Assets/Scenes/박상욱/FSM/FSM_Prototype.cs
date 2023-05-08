@@ -56,6 +56,7 @@ public class FSM_Prototype : MonoBehaviour
 
     private void Init_Update()
     {
+        /*
         //사용자가 검과 상호작용한 경우
         if (GameManager.GetComponent<GameManager>().isGrabSword == true)
         {
@@ -66,6 +67,7 @@ public class FSM_Prototype : MonoBehaviour
             Grab_Sword.Invoke();
             fsm.ChangeState(States.Tutorial);
         }
+        */
     }
 
     private void Tutorial_Enter()
@@ -77,11 +79,13 @@ public class FSM_Prototype : MonoBehaviour
 
     private void Tutorial_Update() 
     {
+        /*
         //첫 오존이 파괴될 경우
         if (GameManager.GetComponent<GameManager>().isOzoneBroke == true)
         {
             fsm.ChangeState(States.Start);
         }
+        */
     }
 
     private void Start_Enter()
@@ -93,10 +97,12 @@ public class FSM_Prototype : MonoBehaviour
 
     private void Start_Update()
     {
+        /*
         //게이지가 다 채워졌다면
         if (GameManager.GetComponent<GameManager>().ifFullGauge == true)
         {
             fsm.ChangeState(States.End);
         }
+        */
     }
 }
