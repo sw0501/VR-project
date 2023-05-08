@@ -1,5 +1,5 @@
 sceneSetups:
-- path: "Assets/Scenes/\uBC15\uC0C1\uC6B1/FSM/FSM_Prototype.unity"
+- path: "Assets/Scenes/\uBC15\uC0C1\uC6B1/Event_Prototype/Event_Prototype.unity"
   isLoaded: 1
   isActive: 1
   isSubScene: 0
