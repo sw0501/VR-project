@@ -1,1 +1,5 @@
-sceneSetups: []
+sceneSetups:
+- path: Assets/Scenes/Park/Prototype/Escape.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0
