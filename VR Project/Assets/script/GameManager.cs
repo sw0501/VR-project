@@ -9,6 +9,9 @@ public class GameManager : MonoBehaviour
     static public bool isRetry;
     static public string position;
     private string[] pos_name = { "지상", "대류권", "성층권", "오존층" };
+    public bool isGrabSword;
+    public bool isOzoneBroke;
+    public bool ifFullGauge;
 
     public GameObject Player;
 

@@ -1,12 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//using MonsterLove.StateMachine; //1. Remember the using statement
+using MonsterLove.StateMachine; //1. Remember the using statement
 using Unity.VisualScripting;
 
 public class FSM : MonoBehaviour
 {
-    /*
+    
     public GameObject player;
 
     public enum States
@@ -67,5 +67,5 @@ public class FSM : MonoBehaviour
         Debug.Log("Game Over - you lost!");
 
     }
-    */
+    
 }
