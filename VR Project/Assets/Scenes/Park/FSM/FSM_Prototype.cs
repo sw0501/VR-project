@@ -2,13 +2,12 @@ using MonsterLove.StateMachine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//using MonsterLove.StateMachine;
 using UnityEngine.Events;
 using Unity.EditorCoroutines;
 
 public class FSM_Prototype : MonoBehaviour
 {
-    /*
+    
     public GameObject GameManager;
 
     public UnityEvent Init_Start;
@@ -36,30 +35,30 @@ public class FSM_Prototype : MonoBehaviour
     }
 
     StateMachine<States> fsm;
-    */
+  
 
     private void Awake()
     {
-        //fsm = StateMachine<States>.Initialize(this);
+        fsm = StateMachine<States>.Initialize(this);
 
-        //fsm.ChangeState(States.Init);
+        fsm.ChangeState(States.Init);
         
     }
 
     private void Init_Enter()
     {
-        /*
+        
         Debug.Log("Init");
         //컨트롤러 빨간 빛 매핑 
         Init_Start.Invoke();
         StartCoroutine(Create_Sword());
         Init_End.Invoke();
-        */
+        
     }
 
     private void Init_Update()
     {
-        /*
+        
         //사용자가 검과 상호작용한 경우
         if (GameManager.GetComponent<GameManager>().isGrabSword == true)
         {
@@ -70,7 +69,7 @@ public class FSM_Prototype : MonoBehaviour
             Grab_Sword.Invoke();
             fsm.ChangeState(States.Tutorial);
         }
-        */
+        
     }
 
     private void Tutorial_Enter()
@@ -82,13 +81,13 @@ public class FSM_Prototype : MonoBehaviour
 
     private void Tutorial_Update() 
     {
-        /*
+        
         //첫 오존이 파괴될 경우
         if (GameManager.GetComponent<GameManager>().isOzoneBroke == true)
         {
             fsm.ChangeState(States.Start);
         }
-        */
+        
     }
 
     private void Start_Enter()
@@ -100,12 +99,12 @@ public class FSM_Prototype : MonoBehaviour
 
     private void Start_Update()
     {
-        /*
+        
         //게이지가 다 채워졌다면
         if (GameManager.GetComponent<GameManager>().ifFullGauge == true)
         {
             fsm.ChangeState(States.End);
         }
-        */
+        
     }
 }
