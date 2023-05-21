@@ -1,9 +1,0 @@
-sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/Park/Study.unity
-=======
-- path: Assets/Test/Yohan/OzoneTest.unity
->>>>>>> d1b97fb6eb44a8e61264f49f39b70f00de066efc
-  isLoaded: 1
-  isActive: 1
-  isSubScene: 0
