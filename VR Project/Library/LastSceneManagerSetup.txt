@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Park/Prototype/Escape.unity
+- path: Assets/Scenes/Park/Study.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
