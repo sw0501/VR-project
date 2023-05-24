@@ -14,14 +14,19 @@ public class Ozone : MonoBehaviour
     [SerializeField]
     private float maxHeight = 3f;
 
+    private AudioManager audioManager;
+
     private void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
     }
 
     private void OnMouseDown()
     {
+        transform.DOKill();
         gameObject.SetActive(false);
+        audioManager.PlaySFX("DestroyOZ");
     }
 
     private void OnCollisionEnter(Collision collision)
