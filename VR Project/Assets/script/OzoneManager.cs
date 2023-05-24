@@ -9,7 +9,7 @@ public class OzoneManager : MonoBehaviour
     private List<GameObject> ozoneObjects;
 
     [SerializeField]
-    private float spawnRadius = 5f;
+    private float spawnRadius = 8f;
     [SerializeField]
     private float angleMax = 360f;
     [SerializeField]
@@ -18,14 +18,14 @@ public class OzoneManager : MonoBehaviour
     [SerializeField]
     private int numObjects = 1;
     [SerializeField]
-    private int maxObjects = 4;
+    private int maxObjects = 6;
 
     private List<int> zoneIndices;
     private int currentIndex;
 
     private float spawnTimer = 0f;
     [SerializeField]
-    private float spawnCycle = 1f;
+    private float spawnCycle = 0.8f;
 
     private void Awake()
     {
@@ -38,16 +38,17 @@ public class OzoneManager : MonoBehaviour
         spawnTimer += Time.deltaTime;
         if (spawnTimer > spawnCycle)
         {
-            SpawnObjects();
             spawnTimer = 0;
+            if (SpawnObjects() == false)
+            {
+                RespawnObject();
+            }
         }
-
-        RespawnObjects();
     }
 
-    private void SpawnObjects()
+    private bool SpawnObjects()
     {
-
+        bool spawnFlag = false;
         if (currentIndex == 0)
         {
             // Create a list of zone indices
@@ -64,7 +65,7 @@ public class OzoneManager : MonoBehaviour
         {
             if (ozoneObjects.Count >= maxObjects)
             {
-                return;
+                return spawnFlag;
             }
 
             Vector3 spawnPosition = NewSpawnPosition();
@@ -79,9 +80,12 @@ public class OzoneManager : MonoBehaviour
         {
             currentIndex = 0;
         }
+
+        spawnFlag = true;
+        return spawnFlag;
     }
 
-    private void RespawnObjects()
+    private void RespawnObject()
     {
         if (currentIndex == 0)
         {
@@ -95,6 +99,7 @@ public class OzoneManager : MonoBehaviour
             Shuffle(zoneIndices);
         }
 
+        //TODO: 여러개 생성하도록 처리
         for (int i = 0; i < ozoneObjects.Count; i++)
         {
             if (ozoneObjects[i].activeSelf == false)
@@ -104,6 +109,7 @@ public class OzoneManager : MonoBehaviour
                 ozoneObjects[i].transform.position = spawnPosition;
                 ozoneObjects[i].SetActive(true);
                 ozoneObjects[i].GetComponent<Ozone>().MoveObject();
+                break;
             }
         }
 

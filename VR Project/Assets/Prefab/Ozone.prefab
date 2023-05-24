@@ -110,3 +110,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87d4b3839e9ca7042958c079ebe04eb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveDuration: 2
+  playerDistance: 1.5
+  maxHeight: 3
