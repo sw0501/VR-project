@@ -123,6 +123,26 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &792004415 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3323685433808908452, guid: 10e27480036aa6c41aeb2dcc6391d6c3, type: 3}
+  m_PrefabInstance: {fileID: 3323685433043895302}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &792004421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 792004415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.098039225, g: 0.098039225, b: 0.098039225, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1113469060
 GameObject:
   m_ObjectHideFlags: 0
@@ -353,6 +373,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1561927852}
   - component: {fileID: 1561927851}
+  - component: {fileID: 1561927853}
   m_Layer: 0
   m_Name: SwordInstance
   m_TagString: Untagged
@@ -390,6 +411,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1561927853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561927850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.8588236, g: 0.1137255, b: 0.07058824, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1736735234 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1510369807597419817, guid: 920b7dd900a0d394e9ca66e1658fc5bd, type: 3}
