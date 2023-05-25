@@ -63,9 +63,7 @@ public class FSM_Prototype : MonoBehaviour
         if (GameManager.GetComponent<GameManager>().isGrabSword == true)
         {
             //연결되어야 하는 함수
-            //컨트롤러 1초간 진동
             //검에 붉은 빛 이펙트
-            //컨트롤러에 검 매핑
             Grab_Sword.Invoke();
             fsm.ChangeState(States.Tutorial);
         }
@@ -76,7 +74,7 @@ public class FSM_Prototype : MonoBehaviour
     {
         //오존 생성
         //오존 파괴하라는 자막 제공
-        //Tutorial_Start.Invoke();
+        Tutorial_Start.Invoke();
     }
 
     private void Tutorial_Update() 
