@@ -22,6 +22,9 @@ public class GameManager : MonoBehaviour
         height = 1f;
         isRetry = false;
         position = string.Empty;
+        isGrabSword= false;
+        isOzoneBroke= false;
+        ifFullGauge= false;
     }
 
     private void Update()
