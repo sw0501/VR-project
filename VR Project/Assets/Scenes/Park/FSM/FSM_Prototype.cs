@@ -72,6 +72,7 @@ public class FSM_Prototype : MonoBehaviour
 
     private void Tutorial_Enter()
     {
+        Debug.Log("Tutorial");
         //오존 생성
         //오존 파괴하라는 자막 제공
         Tutorial_Start.Invoke();
@@ -90,9 +91,10 @@ public class FSM_Prototype : MonoBehaviour
 
     private void Start_Enter()
     {
+        Debug.Log("Start");
         //오존 파괴 게이지 UI 제공
         //필요할 시 오존 생성하는 컴포넌트 활성화 시킬 수 있음 (coroutin 활용하여 생성 주기 만들기 가능)
-        //Start_Start.Invoke();
+        Start_Start.Invoke();
     }
 
     private void Start_Update()

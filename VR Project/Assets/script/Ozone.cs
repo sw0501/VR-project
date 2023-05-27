@@ -20,6 +20,7 @@ public class Ozone : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
+        audioManager.PlaySFX("CreateOZ");
     }
 
     private void OnMouseDown()
