@@ -31,6 +31,7 @@ public class GameManager : MonoBehaviour
     {
         height = Player.GetComponent<Transform>().position.y;
         position = pos_name[(int)(height) % 10000];
+
     }
 
     public float getHeight()

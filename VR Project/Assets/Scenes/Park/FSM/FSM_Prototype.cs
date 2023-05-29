@@ -9,6 +9,7 @@ public class FSM_Prototype : MonoBehaviour
 {
     
     public GameObject GameManager;
+    public GameObject uiManager;
 
     public UnityEvent Init_Start;
     public UnityEvent Init_End;
@@ -16,6 +17,7 @@ public class FSM_Prototype : MonoBehaviour
     public UnityEvent Grab_Sword;
     public UnityEvent Tutorial_Start;
     public UnityEvent Start_Start;
+    public UnityEvent Start_End;
 
     public enum States
     {
@@ -99,12 +101,20 @@ public class FSM_Prototype : MonoBehaviour
 
     private void Start_Update()
     {
-        
+        Debug.Log(uiManager.GetComponent<UIManager>().IsFullGauge());
         //게이지가 다 채워졌다면
-        if (GameManager.GetComponent<GameManager>().ifFullGauge == true)
+        if (uiManager.GetComponent<UIManager>().IsFullGauge() == true)
         {
+            uiManager.GetComponent<UIManager>().HideGauge();
+            uiManager.GetComponent<UIManager>().ChangeSubtitle("mission clear");
+            uiManager.GetComponent<UIManager>().ShowSubtitle();
             fsm.ChangeState(States.End);
         }
         
+    }
+
+    private void End_Update()
+    {
+        Debug.Log("End");
     }
 }
