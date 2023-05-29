@@ -16,18 +16,23 @@ public class Ozone : MonoBehaviour
 
     private AudioManager audioManager;
 
+    private UIManager uiManager;
+
     private void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
+        uiManager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
         audioManager.PlaySFX("CreateOZ");
     }
 
     private void OnMouseDown()
     {
+        uiManager.IncreaseGaugeValue();
         transform.DOKill();
         gameObject.SetActive(false);
         audioManager.PlaySFX("DestroyOZ");
+        
     }
 
     private void OnCollisionEnter(Collision collision)
