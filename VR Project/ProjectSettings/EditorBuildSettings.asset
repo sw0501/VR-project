@@ -8,21 +8,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Park/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 0
-    path: Assets/Scenes/fly.unity
-    guid: 5b0b5cde7b5c1154f8d218de6f759c3f
   - enabled: 1
-    path: Assets/Scenes/Start Scene.unity
-    guid: 1c53dffaf7f344f4587b915d6a31b384
-  - enabled: 1
-    path: Assets/Scenes/Escape Scene.unity
-    guid: 64b8325226a93254ebb6b74f5e02fadc
-  - enabled: 1
-    path: Assets/Scenes/Main Scene.unity
-    guid: 658ecd56253fe794f8ec1596e979bd5c
-  - enabled: 1
-    path: Assets/Scenes/Park/Retry Scene.unity
-    guid: a025be90994a42e4e819c5a3df1d31d6
+    path: Assets/Scenes/Develop/Main Scene.unity
+    guid: def9ad38b7314ff4386718add7970523
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: a37eccabc4580f7428723ca8cdbb198d, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 7af4fcd2fbcee544997a04b7ab3fbddd, type: 2}

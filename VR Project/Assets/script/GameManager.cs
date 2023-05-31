@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         height = Player.GetComponent<Transform>().position.y;
-        position = pos_name[(int)(height) % 10000];
+        position = pos_name[(int)(height) / 10000];
 
     }
 

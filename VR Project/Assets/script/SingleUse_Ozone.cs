@@ -29,7 +29,7 @@ public class SingleUse_Ozone : MonoBehaviour
         audioManager.PlaySFX("DestroyOZ");
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(UnityEngine.Collision collision)
     {
         //TODO 검과 충돌하면 제거 및 점수처리
     }
