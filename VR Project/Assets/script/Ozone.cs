@@ -32,10 +32,9 @@ public class Ozone : MonoBehaviour
         transform.DOKill();
         gameObject.SetActive(false);
         audioManager.PlaySFX("DestroyOZ");
-        
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(UnityEngine.Collision collision)
     {
         //TODO 검과 충돌하면 제거 및 점수처리
     }

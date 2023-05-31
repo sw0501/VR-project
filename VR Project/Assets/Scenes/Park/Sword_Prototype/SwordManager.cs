@@ -27,6 +27,7 @@ public class SwordManager : MonoBehaviour
         {
             ControllerPrefab.GetComponent<controllerchange>().status = true;
 
+            
             /*
             Debug.Log("Parent");
             this.transform.SetParent(other.transform);

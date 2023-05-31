@@ -34,8 +34,8 @@ public class PlayerManager : MonoBehaviour
     //컨트롤러에 진동 
     public void ActivateHaptic()
     {
-        Debug.Log("Haptic");
-        //xr.SendHapticImpulse(0.7f, 2f);
+        //Debug.Log("Haptic");
+        xr.SendHapticImpulse(0.7f, 2f);
     }
     
     //컨트롤러에 Red 이펙트
