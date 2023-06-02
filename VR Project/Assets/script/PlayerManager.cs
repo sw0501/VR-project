@@ -26,9 +26,11 @@ public class PlayerManager : MonoBehaviour
 
     private void Update()
     {
+        /*
         if(Input.GetKeyDown(KeyCode.Space)) {
             Test.Invoke();
         }
+        */
     }
 
     //컨트롤러에 진동 
