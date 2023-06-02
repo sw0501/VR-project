@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.Events;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class Ozone : MonoBehaviour
 {
@@ -18,12 +20,18 @@ public class Ozone : MonoBehaviour
 
     private UIManager uiManager;
 
+    private XRController left_controller;
+    private XRController right_controller;
+
     private void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
         uiManager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
         audioManager.PlaySFX("CreateOZ");
+        //left_controller = (XRController)GameObject.FindObjectsOfType(typeof(XRController))[0];
+        right_controller = (XRController)GameObject.FindObjectsOfType(typeof(XRController))[1];
+
     }
 
     private void OnMouseDown()
@@ -32,6 +40,18 @@ public class Ozone : MonoBehaviour
         transform.DOKill();
         gameObject.SetActive(false);
         audioManager.PlaySFX("DestroyOZ");
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "GameController")
+        {
+            uiManager.IncreaseGaugeValue();
+            transform.DOKill();
+            gameObject.SetActive(false);
+            audioManager.PlaySFX("DestroyOZ");
+            right_controller.SendHapticImpulse(0.7f, 0.5f);
+        }
     }
 
     private void OnCollisionEnter(UnityEngine.Collision collision)
