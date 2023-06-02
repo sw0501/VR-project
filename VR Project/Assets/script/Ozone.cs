@@ -28,7 +28,7 @@ public class Ozone : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
         uiManager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
-        audioManager.PlaySFX("CreateOZ");
+        //audioManager.PlaySFX("CreateOZ");
         //left_controller = (XRController)GameObject.FindObjectsOfType(typeof(XRController))[0];
         right_controller = (XRController)GameObject.FindObjectsOfType(typeof(XRController))[1];
 
