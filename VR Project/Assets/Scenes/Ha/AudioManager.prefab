@@ -57,6 +57,18 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: c1a37e7f1c1fb214681e40d0e176f25d, type: 3}
   - name: Clear
     clip: {fileID: 8300000, guid: 5e5e441661c266b4c9e9f1148b17a8f7, type: 3}
+  - name: ShotLazer
+    clip: {fileID: 8300000, guid: ac6a242c07d83b64ab50b4e5444978bf, type: 3}
+  - name: LazerFrizzle
+    clip: {fileID: 8300000, guid: b7012d3817342ac47a06aeb658d48c04, type: 3}
+  - name: Birds
+    clip: {fileID: 8300000, guid: a1dc0a39a8450454d929b9f5db0a0a32, type: 3}
+  - name: Wind
+    clip: {fileID: 8300000, guid: 0385b081f76a910499454327ee2eb36e, type: 3}
+  - name: SeaWave
+    clip: {fileID: 8300000, guid: c0e1b4b2390a5d54ea4ad2992a87ada3, type: 3}
+  - name: Earthquake
+    clip: {fileID: 8300000, guid: b4189e7aecc47f44b8903baa39c26e55, type: 3}
   bgm:
   - name: BGM0
     clip: {fileID: 8300000, guid: 5da69716c8206624d81b1c1a04acf191, type: 3}
@@ -64,6 +76,8 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: aa4a3d87189b36641ade3f6e8b0c2d15, type: 3}
   bgmPlayer: {fileID: 7680592265966697855}
   sfxPlayer:
+  - {fileID: 7680592265292645471}
+  - {fileID: 7680592265292645471}
   - {fileID: 7680592265292645471}
   - {fileID: 7680592265292645471}
   - {fileID: 7680592265292645471}
