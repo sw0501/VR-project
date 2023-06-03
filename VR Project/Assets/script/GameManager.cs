@@ -43,4 +43,18 @@ public class GameManager : MonoBehaviour
     {
         return position; 
     }
+
+    public void GrabSword()
+    {
+        isGrabSword = true;
+    }
+
+    public void DestroyAllOzone()
+    {
+        GameObject[] ozones = GameObject.FindGameObjectsWithTag("Ozone");
+        for(int i = 0; i < ozones.Length; i++)
+        {
+            ozones[i].SetActive(false);
+        }
+    }
 }
