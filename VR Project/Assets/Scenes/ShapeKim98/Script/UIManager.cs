@@ -12,8 +12,20 @@ public class UIManager : MonoBehaviour
     public TMP_Text heightText;
     public TMP_Text locationText;
     public Slider gauge;
+    public Image image;
 
     public GameObject positionPanel;
+
+    IEnumerator FadeCoroutine()
+    {
+        float fadeCount = 0;
+        while(fadeCount < 1.0f){
+            fadeCount += 0.01f;
+            yield return new WaitForSeconds(0.01f);
+            image.color = new Color(0,0,0,fadeCount);
+        }
+        
+    }
 
     public void Awake()
     {
@@ -123,5 +135,9 @@ public class UIManager : MonoBehaviour
         subtitle.enabled = false;
         positionPanel.gameObject.SetActive(false);
         gauge.gameObject.SetActive(false);
+    }
+
+    public void FadeOut(){
+        StartCoroutine(FadeCoroutine());
     }
 }
