@@ -721,6 +721,11 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!82 &742882723 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 9119556440669168100, guid: 3d9d6d4dded8f7a40a38b4fc47905767, type: 3}
+  m_PrefabInstance: {fileID: 1954918623}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &763279057 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2302768096395327485, guid: 190d274773d38e641adf3d3cbd236c35, type: 3}
@@ -1952,6 +1957,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: AudioManager
       objectReference: {fileID: 0}
+    - target: {fileID: 7680592265141083169, guid: 3d9d6d4dded8f7a40a38b4fc47905767, type: 3}
+      propertyPath: sfxPlayer.Array.data[1]
+      value: 
+      objectReference: {fileID: 742882723}
     - target: {fileID: 7680592265141083170, guid: 3d9d6d4dded8f7a40a38b4fc47905767, type: 3}
       propertyPath: m_RootOrder
       value: 4
