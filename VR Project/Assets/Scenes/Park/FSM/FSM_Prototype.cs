@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
+
 //using Unity.EditorCoroutines;
 
 public class FSM_Prototype : MonoBehaviour
@@ -22,6 +24,11 @@ public class FSM_Prototype : MonoBehaviour
 
     public enum States
     {
+        Start_Scene,
+        Main_Scene,
+        Forset_Scene,
+        Polar_Scene,
+        End_Scene,
         Init,
         Tutorial,
         Start,
@@ -54,10 +61,28 @@ public class FSM_Prototype : MonoBehaviour
 
     private void Awake()
     {
+        DontDestroyOnLoad(this);
         fsm = StateMachine<States>.Initialize(this);
-
+        
         fsm.ChangeState(States.Init);
         
+    }
+
+    private void Start_Scene_Enter()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+
+    private void Start_Scene_Update()
+    {
+        Debug.Log(1);
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            Debug.Log(1);
+            SceneManager.LoadScene(1);
+            fsm.ChangeState(States.Init);
+        }
     }
 
     private void Init_Enter()
