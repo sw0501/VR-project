@@ -12,19 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03d28debf5b7acf40901d618ee2dacf1, type: 3}
   m_Name: AerosolConfig
   m_EditorClassIdentifier: 
-  Skybox: {fileID: 2100000, guid: 5620b6786a8eebc43ac41b78dc3267fe, type: 2}
-  ComputeTransmittance: {fileID: 4800000, guid: 1e4880b60a6ed674b96d75e2306b040f,
-    type: 3}
-  ComputeDirectIrradiance: {fileID: 4800000, guid: 099da7992073e9b49b428c4e15af6271,
-    type: 3}
-  ComputeSingleScattering: {fileID: 4800000, guid: fd85ac28bc78f094aa6340953aac3a24,
-    type: 3}
-  ComputeScatteringDensity: {fileID: 4800000, guid: e47fce4c3ffb4da4c92c3092df27f449,
-    type: 3}
-  ComputeIndirectIrradiance: {fileID: 4800000, guid: 9e5ed64a4c4b4404486bace0edd60bd0,
-    type: 3}
-  ComputeMultipleScattering: {fileID: 4800000, guid: 1148181d81b018144a70dad4464b8174,
-    type: 3}
+  Skybox: {fileID: 2100000, guid: efd1c33efd2d58340b88804268e6833f, type: 2}
+  ComputeTransmittance: {fileID: 4800000, guid: 1e4880b60a6ed674b96d75e2306b040f, type: 3}
+  ComputeDirectIrradiance: {fileID: 4800000, guid: 099da7992073e9b49b428c4e15af6271, type: 3}
+  ComputeSingleScattering: {fileID: 4800000, guid: fd85ac28bc78f094aa6340953aac3a24, type: 3}
+  ComputeScatteringDensity: {fileID: 4800000, guid: e47fce4c3ffb4da4c92c3092df27f449, type: 3}
+  ComputeIndirectIrradiance: {fileID: 4800000, guid: 9e5ed64a4c4b4404486bace0edd60bd0, type: 3}
+  ComputeMultipleScattering: {fileID: 4800000, guid: 1148181d81b018144a70dad4464b8174, type: 3}
   Params:
     Wavelengths:
     - 360
