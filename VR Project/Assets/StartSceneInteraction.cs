@@ -4,24 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.XR.Interaction.Toolkit;
 
-public class testsaf : MonoBehaviour
+public class StartSceneInteraction : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Destroy(GameObject.FindWithTag("Player"));
-            SceneManager.LoadScene(1);
-        }
-
-    }
 
     public void LoadMainScene()
     {
