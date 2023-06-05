@@ -12,6 +12,7 @@ public class PlayerEvents : MonoBehaviour
     public UnityEvent onPlayerAlive;
     public UnityEvent FullGauge;
     public Text Tutorial_intro;
+    int guage = 0;
 
     private void Dead()
     {

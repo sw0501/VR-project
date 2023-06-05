@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     static public float height;
     static public bool isRetry;
     static public string position;
-    private string[] pos_name = { "지상", "오존층" };
+    private string[] pos_name = { "지상", "대류권", "성층권", "오존층" };
     public bool isGrabSword;
     public bool isOzoneBroke;
     public bool ifFullGauge;
@@ -30,8 +30,7 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         height = Player.GetComponent<Transform>().position.y;
-        height = ((int)(height) > 0 ? 23 : 0);
-        position = pos_name[((int)(height) > 0 ? 1 : 0)];
+        position = pos_name[(int)(height) / 10000];
 
     }
 
