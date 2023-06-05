@@ -39,7 +39,7 @@ public class UIManager : MonoBehaviour
 
     private void Update()
     {
-        heightText.text =  "고도 : " + gameManager.getHeight() + "m";
+        heightText.text =  "고도 : " + gameManager.getHeight() + "km";
         locationText.text = "위치 : " + gameManager.getPosition();
     }
 
