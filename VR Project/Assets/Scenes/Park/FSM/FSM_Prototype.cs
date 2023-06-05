@@ -21,6 +21,7 @@ public class FSM_Prototype : MonoBehaviour
     public UnityEvent Start_Start;
     public UnityEvent Start_End1;
     public UnityEvent Start_End2;
+    public UnityEvent End_End;
 
     public enum States
     {
@@ -37,7 +38,7 @@ public class FSM_Prototype : MonoBehaviour
 
     IEnumerator Create_Sword()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
         //오존 생성 및 검 합쳐지는 이펙트 
         //검 생성 사운드
         //컨트롤러 진동 연결
@@ -159,12 +160,19 @@ public class FSM_Prototype : MonoBehaviour
         
     }
 
+    private void End_Enter()
+    {
+        End_End.Invoke();
+    }
+
     private void End_Update()
     {
+        /*
         //슬라이더와 자막이 모두 비활성화인 상태일 때
         if(!uiManager.GetComponent<UIManager>().gauge.IsActive() && !uiManager.GetComponent<UIManager>().subtitle.IsActive())
         {
 
         }
+        */
     }
 }
