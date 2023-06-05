@@ -9,12 +9,16 @@ using System;
 public class PlayerManager : MonoBehaviour
 {
     public UnityEvent Test;
-    private XRController xr;
+    private XRController left_Controller;
+    private XRController right_Controller;
+
+    public GameObject Player;
 
     //Scene 이동 시 오브젝트 파괴 X
     private void Awake()
     {
-        xr = (XRController)GameObject.FindObjectOfType(typeof(XRController));
+        left_Controller = (XRController)GameObject.FindObjectsOfType(typeof(XRController))[0];
+        right_Controller = (XRController)GameObject.FindObjectsOfType(typeof(XRController))[1];
         DontDestroyOnLoad(this);
     }
 
@@ -37,7 +41,8 @@ public class PlayerManager : MonoBehaviour
     public void ActivateHaptic()
     {
         //Debug.Log("Haptic");
-        xr.SendHapticImpulse(0.7f, 2f);
+        left_Controller.SendHapticImpulse(0.7f, 2f);
+        right_Controller.SendHapticImpulse(0.7f, 2f);
     }
     
     //컨트롤러에 Red 이펙트
@@ -55,5 +60,10 @@ public class PlayerManager : MonoBehaviour
                 break;
 
         }
+    }
+
+    public void FallPlayer()
+    {
+        Player.AddComponent<Rigidbody>();
     }
 }
