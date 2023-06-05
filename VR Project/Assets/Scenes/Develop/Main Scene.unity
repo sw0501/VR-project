@@ -1080,7 +1080,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 91.3}
+  m_AnchoredPosition: {x: 0, y: 163.29991}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &121884126
@@ -2176,7 +2176,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 50}
+  m_AnchoredPosition: {x: 0, y: 122}
   m_SizeDelta: {x: 300, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &266240221
@@ -2224,7 +2224,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1597433738}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 5
+  m_MaxValue: 1
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -5794,6 +5794,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &690007007 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1510369806870057538, guid: 920b7dd900a0d394e9ca66e1658fc5bd, type: 3}
+  m_PrefabInstance: {fileID: 2054530945}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &695674323
 GameObject:
   m_ObjectHideFlags: 0
@@ -5806,6 +5811,7 @@ GameObject:
   - component: {fileID: 695674327}
   - component: {fileID: 695674326}
   - component: {fileID: 695674325}
+  - component: {fileID: 695674328}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -5821,21 +5827,21 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 695674323}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 100.01355}
-  m_LocalScale: {x: 0.28329256, y: 0.28329256, z: 0.28329256}
+  m_LocalPosition: {x: 0, y: 0, z: 0.501}
+  m_LocalScale: {x: 0.001, y: 0.001, z: 0.001}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1576882947}
   - {fileID: 121884125}
   - {fileID: 266240220}
   - {fileID: 2142812718}
-  m_Father: {fileID: 2073429577}
+  m_Father: {fileID: 690007007}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -665.69275, y: -366.95886}
-  m_SizeDelta: {x: 881.19995, y: 407.6}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1280, y: 630}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &695674325
 MonoBehaviour:
@@ -5898,6 +5904,25 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &695674328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695674323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7951c64acb0fa62458bf30a60089fe2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 0
+  m_CheckFor2DOcclusion: 0
+  m_CheckFor3DOcclusion: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RaycastTriggerInteraction: 1
 --- !u!1001 &709438399
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7881,6 +7906,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: Earthquake
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2142812717}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 2073429575}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
@@ -12617,7 +12654,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 214, y: -100}
+  m_AnchoredPosition: {x: 289, y: -117}
   m_SizeDelta: {x: 300, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1597433737
@@ -17848,7 +17885,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2073429577}
   - component: {fileID: 2073429575}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: UIManager
   m_TagString: UIManager
   m_Icon: {fileID: 0}
@@ -17885,8 +17922,7 @@ Transform:
   m_LocalPosition: {x: 665.69275, y: 368.07648, z: -0.013549805}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 695674324}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -18427,7 +18463,7 @@ RectTransform:
   m_GameObject: {fileID: 2142812717}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 695674324}
