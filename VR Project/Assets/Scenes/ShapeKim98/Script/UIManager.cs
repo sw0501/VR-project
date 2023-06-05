@@ -20,7 +20,7 @@ public class UIManager : MonoBehaviour
     {
         float fadeCount = 0;
         while(fadeCount < 1.0f){
-            fadeCount += 0.01f;
+            fadeCount += 0.005f;
             yield return new WaitForSeconds(0.01f);
             image.color = new Color(0,0,0,fadeCount);
         }

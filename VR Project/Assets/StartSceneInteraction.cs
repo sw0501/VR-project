@@ -13,7 +13,5 @@ public class StartSceneInteraction : MonoBehaviour
         XRController right_controller = (XRController)GameObject.FindObjectsOfType(typeof(XRController))[1];
         left_controller.GetComponent<XRController>().SendHapticImpulse(0.7f, 1f);
         right_controller.GetComponent<XRController>().SendHapticImpulse(0.7f, 1f);
-        Destroy(GameObject.FindWithTag("Player"));
-        SceneManager.LoadScene(1);
     }
 }
