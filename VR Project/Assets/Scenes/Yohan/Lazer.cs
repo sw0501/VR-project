@@ -26,7 +26,7 @@ public class Lazer : MonoBehaviour
                 Vector3 extendEndScale = transform.localScale + new Vector3(0, maxLenght, 0);
                 transform.DOScale(extendEndScale, maxLenght / extendSpeed);
 
-                Vector3 moveEndPoint = transform.position + transform.up * -maxLenght;
+                Vector3 moveEndPoint = transform.position + new Vector3(0, -maxLenght, 0);
                 transform.DOMove(moveEndPoint, maxLenght / extendSpeed);
 
                 timerFlag = true;
