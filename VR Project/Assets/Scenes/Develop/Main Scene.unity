@@ -1856,8 +1856,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: fc44d2af2e5174ed39e423dab2d8999c, type: 2}
+  m_sharedMaterial: {fileID: 3275930880505723927, guid: fc44d2af2e5174ed39e423dab2d8999c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1964,7 +1964,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4981454088974535424, guid: 02db073e3a120c149badd2d1c3fb03ec, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5205239247368606914, guid: 02db073e3a120c149badd2d1c3fb03ec, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -11160,7 +11160,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1383928476
 Transform:
   m_ObjectHideFlags: 0
@@ -18160,6 +18160,7 @@ MonoBehaviour:
   subtitle: {fileID: 121884127}
   heightText: {fileID: 26083879}
   locationText: {fileID: 2058194422}
+  swordSubtitle: {fileID: 243154672}
   gauge: {fileID: 266240221}
   positionPanel: {fileID: 1576882944}
 --- !u!4 &2073429577
