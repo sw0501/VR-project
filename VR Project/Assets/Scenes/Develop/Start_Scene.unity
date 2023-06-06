@@ -165,7 +165,19 @@ MonoBehaviour:
       m_Calls: []
   m_HoverEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129071359}
+        m_TargetAssemblyTypeName: StartSceneInteraction, Assembly-CSharp
+        m_MethodName: ActivateHaptic
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0.5
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_HoverExited:
     m_PersistentCalls:
       m_Calls: []
@@ -178,16 +190,16 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 129071359}
-        m_TargetAssemblyTypeName: StartSceneInteraction, Assembly-CSharp
-        m_MethodName: LoadMainScene
-        m_Mode: 1
+      - m_Target: {fileID: 110830692}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: ButtonClick
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1116499194}
@@ -280,8 +292,89 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.04575354, y: 0.007954624, z: 0.0040000016}
-  m_Center: {x: -0.022998437, y: 0.0022033053, z: -6.8537653e-10}
+  m_Size: {x: 0.045753565, y: 0.0174211, z: 0.0040000016}
+  m_Center: {x: -0.022998448, y: -0.002529933, z: -0.000000056817502}
+--- !u!1001 &110830691
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7680592265141083168, guid: 3d9d6d4dded8f7a40a38b4fc47905767, type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680592265141083168, guid: 3d9d6d4dded8f7a40a38b4fc47905767, type: 3}
+      propertyPath: m_TagString
+      value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680592265141083169, guid: 3d9d6d4dded8f7a40a38b4fc47905767, type: 3}
+      propertyPath: sfxPlayer.Array.data[1]
+      value: 
+      objectReference: {fileID: 110830693}
+    - target: {fileID: 7680592265141083170, guid: 3d9d6d4dded8f7a40a38b4fc47905767, type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680592265141083170, guid: 3d9d6d4dded8f7a40a38b4fc47905767, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680592265141083170, guid: 3d9d6d4dded8f7a40a38b4fc47905767, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680592265141083170, guid: 3d9d6d4dded8f7a40a38b4fc47905767, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680592265141083170, guid: 3d9d6d4dded8f7a40a38b4fc47905767, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680592265141083170, guid: 3d9d6d4dded8f7a40a38b4fc47905767, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680592265141083170, guid: 3d9d6d4dded8f7a40a38b4fc47905767, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680592265141083170, guid: 3d9d6d4dded8f7a40a38b4fc47905767, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680592265141083170, guid: 3d9d6d4dded8f7a40a38b4fc47905767, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680592265141083170, guid: 3d9d6d4dded8f7a40a38b4fc47905767, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680592265141083170, guid: 3d9d6d4dded8f7a40a38b4fc47905767, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3d9d6d4dded8f7a40a38b4fc47905767, type: 3}
+--- !u!114 &110830692 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7680592265141083169, guid: 3d9d6d4dded8f7a40a38b4fc47905767, type: 3}
+  m_PrefabInstance: {fileID: 110830691}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ddeeed3167a5da48aa2903bf403f916, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!82 &110830693 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 9119556440669168100, guid: 3d9d6d4dded8f7a40a38b4fc47905767, type: 3}
+  m_PrefabInstance: {fileID: 110830691}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &114549382
 GameObject:
   m_ObjectHideFlags: 0
@@ -498,7 +591,7 @@ GameObject:
   - component: {fileID: 129071360}
   - component: {fileID: 129071359}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: StartSceneManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -516,6 +609,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca458384dd6fd9c489e25ca45c1a8237, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioManager: {fileID: 0}
 --- !u!4 &129071360
 Transform:
   m_ObjectHideFlags: 0
