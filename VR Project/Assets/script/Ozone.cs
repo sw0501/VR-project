@@ -4,6 +4,7 @@ using UnityEngine;
 using DG.Tweening;
 using UnityEngine.Events;
 using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.SceneManagement;
 
 public class Ozone : MonoBehaviour
 {
@@ -28,8 +29,8 @@ public class Ozone : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
         uiManager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
-        //audioManager.PlaySFX("CreateOZ");
-        //left_controller = (XRController)GameObject.FindObjectsOfType(typeof(XRController))[0];
+        audioManager.PlaySFX("CreateOZ");
+        left_controller = (XRController)GameObject.FindObjectsOfType(typeof(XRController))[0];
         right_controller = (XRController)GameObject.FindObjectsOfType(typeof(XRController))[1];
 
     }

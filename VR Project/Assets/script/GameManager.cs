@@ -29,10 +29,12 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        height = Player.GetComponent<Transform>().position.y;
-        height = ((int)(height) > 0 ? 23 : 0);
-        position= pos_name[(int)(height) > 0 ? 23 : 0];
-
+        if(Player!= null)
+        {
+            height = Player.GetComponent<Transform>().position.y;
+            height = ((int)(height) > 0 ? 23 : 0);
+            position = pos_name[(int)(height) > 0 ? 23 : 0];
+        }
     }
 
     public float getHeight()

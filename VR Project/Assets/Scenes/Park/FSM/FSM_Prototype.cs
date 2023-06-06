@@ -49,8 +49,12 @@ public class FSM_Prototype : MonoBehaviour
         //게이지 바 숨김
         //컨트롤러 진동 연결
         Start_End2.Invoke();
-        //End_End.Invoke();
-        
+        End_End.Invoke();
+
+        yield return new WaitForSeconds(5f);
+
+        SceneManager.LoadScene(2);
+
     }
 
     StateMachine<States> fsm;
