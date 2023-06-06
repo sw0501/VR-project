@@ -10,6 +10,10 @@ TagManager:
   - Light
   - Tree
   - Lazer
+  - GameManager
+  - PlayerManager
+  - FSMManager
+  - Panel
   layers:
   - Default
   - TransparentFX
