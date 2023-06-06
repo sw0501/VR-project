@@ -11,6 +11,7 @@ public class FadeOut : MonoBehaviour
         float fadeCount = 0;
         while (fadeCount < 1.0f)
         {
+
             fadeCount += 0.01f;
             yield return new WaitForSeconds(0.01f);
             this.GetComponent<Image>().color = new Color(0, 0, 0, fadeCount);

@@ -8,26 +8,6 @@ public class StartSceneInteraction : MonoBehaviour
 {
     public AudioManager audioManager;
 
-    /*
-    IEnumerator BirdsSound()
-    {
-        /*
-        float fadeCount = 0;
-        while (fadeCount < 1.0f)
-        {
-            fadeCount += 0.01f;
-            yield return new WaitForSeconds(0.01f);
-            this.GetComponent<Image>().color = new Color(0, 0, 0, fadeCount);
-
-        }
-
-        Destroy(GameObject.FindWithTag("Player"));
-
-        SceneManager.LoadScene(1);
-        
-    }
-    */
-
     public void Awake()
     {
         audioManager = (AudioManager)GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
