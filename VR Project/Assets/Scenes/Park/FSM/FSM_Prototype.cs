@@ -19,6 +19,7 @@ public class FSM_Prototype : MonoBehaviour
     public UnityEvent Start_Start;
     public UnityEvent Start_End1;
     public UnityEvent Start_End2;
+    public UnityEvent End_End;
 
     public enum States
     {
@@ -46,6 +47,7 @@ public class FSM_Prototype : MonoBehaviour
         //게이지 바 숨김
         //컨트롤러 진동 연결
         Start_End2.Invoke();
+        End_End.Invoke();
         
     }
 
@@ -134,12 +136,19 @@ public class FSM_Prototype : MonoBehaviour
         
     }
 
+    private void End_Enter()
+    {
+        //End_End.Invoke();
+    }
+
     private void End_Update()
     {
+        /*
         //슬라이더와 자막이 모두 비활성화인 상태일 때
         if(!uiManager.GetComponent<UIManager>().gauge.IsActive() && !uiManager.GetComponent<UIManager>().subtitle.IsActive())
         {
 
         }
+        */
     }
 }
