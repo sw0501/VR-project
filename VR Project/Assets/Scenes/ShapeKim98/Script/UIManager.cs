@@ -28,6 +28,14 @@ public class UIManager : MonoBehaviour
         
     }
 
+    IEnumerator ShowAndHideSubTitle()
+    {
+        subtitle.enabled = true;
+        yield return new WaitForSeconds(1f);
+        subtitle.enabled = false;
+
+    }
+
 
     public void Awake()
     {
@@ -151,6 +159,7 @@ public class UIManager : MonoBehaviour
     {
         gauge.value += 1;
         this.ChangeSubtitle();
+        StartCoroutine(ShowAndHideSubTitle());
     }
 
     public bool IsFullGauge()
@@ -173,8 +182,17 @@ public class UIManager : MonoBehaviour
         subtitle.enabled = false;
     }
 
+    public void HideSwordSubtitle()
+    {
+        swordSubtitle.enabled = false;
+    }
+
     public void ShowSubtitle() { 
         subtitle.enabled = true;
+    }
+
+    public void ShowSwordSubtitle() { 
+        swordSubtitle.enabled = true;
     }
 
     public void SwitchSceneByNumber(int number) {

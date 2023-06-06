@@ -653,7 +653,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7680592265141083168, guid: 3d9d6d4dded8f7a40a38b4fc47905767, type: 3}
       propertyPath: m_Name
-      value: AudioManager
+      value: AudioManagers
       objectReference: {fileID: 0}
     - target: {fileID: 7680592265141083168, guid: 3d9d6d4dded8f7a40a38b4fc47905767, type: 3}
       propertyPath: m_TagString
@@ -1289,7 +1289,7 @@ GameObject:
   - component: {fileID: 1116499198}
   m_Layer: 5
   m_Name: FadePanel
-  m_TagString: Untagged
+  m_TagString: Panel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1729,6 +1729,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5754084199372789682, guid: 20d05d5e56698d448b05619bca6e59aa, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -2002576902027453414, guid: 20d05d5e56698d448b05619bca6e59aa, type: 3}
     - target: {fileID: 919132149155446097, guid: 20d05d5e56698d448b05619bca6e59aa, type: 3}
       propertyPath: m_Name
       value: retry
@@ -1802,6 +1806,18 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1116499194}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
       - m_Target: {fileID: 129071361}
         m_TargetAssemblyTypeName: EndSceneInteraction, Assembly-CSharp
         m_MethodName: Retry
