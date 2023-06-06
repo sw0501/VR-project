@@ -10,10 +10,7 @@ using UnityEngine.SceneManagement;
 public class PlayerManager : MonoBehaviour
 {
     public UnityEvent Test;
-    private XRController left_Controller;
-    private XRController right_Controller;
-
-    public GameObject Player;
+    private XRController xr;
 
     IEnumerator Vibrate()
     {
@@ -42,8 +39,7 @@ public class PlayerManager : MonoBehaviour
     //Scene 이동 시 오브젝트 파괴 X
     private void Awake()
     {
-        left_Controller = (XRController)GameObject.FindObjectsOfType(typeof(XRController))[0];
-        right_Controller = (XRController)GameObject.FindObjectsOfType(typeof(XRController))[1];
+        xr = (XRController)GameObject.FindObjectOfType(typeof(XRController));
         DontDestroyOnLoad(this);
     }
 
@@ -66,8 +62,7 @@ public class PlayerManager : MonoBehaviour
     public void ActivateHaptic()
     {
         //Debug.Log("Haptic");
-        left_Controller.SendHapticImpulse(0.7f, 2f);
-        right_Controller.SendHapticImpulse(0.7f, 2f);
+        xr.SendHapticImpulse(0.7f, 2f);
     }
     
     //플레이어 진동
@@ -91,10 +86,5 @@ public class PlayerManager : MonoBehaviour
                 break;
 
         }
-    }
-
-    public void FallPlayer()
-    {
-        Player.AddComponent<Rigidbody>();
     }
 }

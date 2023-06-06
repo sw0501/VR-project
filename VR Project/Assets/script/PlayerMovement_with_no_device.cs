@@ -13,11 +13,6 @@ public class PlayerMovement_with_no_device : MonoBehaviour
 
     public float sensitivity = 100f;
 
-    private void Awake()
-    {
-        DontDestroyOnLoad(gameObject);
-    }
-
     void Update()
     {
         //Player Rotate
