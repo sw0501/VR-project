@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
+
 //using Unity.EditorCoroutines;
 
 public class FSM_Prototype : MonoBehaviour
@@ -31,7 +33,7 @@ public class FSM_Prototype : MonoBehaviour
 
     IEnumerator Create_Sword()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
         //오존 생성 및 검 합쳐지는 이펙트 
         //검 생성 사운드
         //컨트롤러 진동 연결
@@ -47,7 +49,7 @@ public class FSM_Prototype : MonoBehaviour
         //게이지 바 숨김
         //컨트롤러 진동 연결
         Start_End2.Invoke();
-        End_End.Invoke();
+        //End_End.Invoke();
         
     }
 
@@ -59,7 +61,7 @@ public class FSM_Prototype : MonoBehaviour
         fsm = StateMachine<States>.Initialize(this);
 
         fsm.ChangeState(States.Init);
-        
+        //DontDestroyOnLoad(this);
     }
 
     private void Init_Enter()
