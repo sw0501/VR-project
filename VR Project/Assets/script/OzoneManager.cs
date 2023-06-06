@@ -132,8 +132,8 @@ public class OzoneManager : MonoBehaviour
         float angleRange = angleMax / numZones;
 
         // Calculate the start and end angles for the selected zone
-        float startAngle = zoneIndex * angleRange;
-        float endAngle = (zoneIndex + 1) * angleRange;
+        float startAngle = zoneIndex * angleRange - angleMax / 2;
+        float endAngle = (zoneIndex + 1) * angleRange - angleMax / 2;
 
         // Calculate a random angle within the selected zone
         float angle = Random.Range(startAngle, endAngle) * Mathf.Deg2Rad;
