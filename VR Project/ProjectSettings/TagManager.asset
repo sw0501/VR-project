@@ -8,6 +8,8 @@ TagManager:
   - UIManager
   - Ozone
   - Light
+  - Tree
+  - Lazer
   layers:
   - Default
   - TransparentFX

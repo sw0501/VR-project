@@ -22,7 +22,7 @@ public class Fish : MonoBehaviour
 
     void Start()
     {
-        Vector3 moveEndPoint = transform.position + new Vector3(moveSpeed*dieTime, 0, 0);
+        Vector3 moveEndPoint = transform.position + (transform.forward * moveSpeed * dieTime);
 
         transform.DOMove(moveEndPoint, dieTime);
     }
@@ -36,8 +36,10 @@ public class Fish : MonoBehaviour
                 Vector3 moveEndPoint = transform.position + new Vector3(0, swimDepth, 0);
                 transform.DOMove(moveEndPoint, dieTime);
 
-                Vector3 rootateEndValue = transform.rotation.eulerAngles + new Vector3(180f, 0, 0);
-                transform.DORotate(rootateEndValue, swimDepth/ floatSpeed);
+                Vector3 rootateEndValue = transform.rotation.eulerAngles + new Vector3(0, 0, 180f);
+                transform.DORotate(rootateEndValue, swimDepth/ floatSpeed * 0.6f);
+
+                GetComponent<Animator>().enabled = false;
 
                 timerFlag = true;
             }
