@@ -87,7 +87,7 @@ public class Ozone : MonoBehaviour
         moveTarget.transform.position = player.transform.position;
 
         moveTarget.transform.position = new Vector3(player.transform.position.x,
-            player.transform.position.y + Random.Range(-maxHeight / 2, maxHeight / 2),
+            player.transform.position.y + Random.Range(0, maxHeight),
             player.transform.position.z);
 
         MoveObject(GetDirectionVector(transform.position, moveTarget.transform.position)
