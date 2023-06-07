@@ -25,7 +25,7 @@ public class EndSceneInteraction : MonoBehaviour
 
         
 
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
 
     }
 
