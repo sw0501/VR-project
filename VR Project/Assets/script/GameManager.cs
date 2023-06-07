@@ -32,8 +32,8 @@ public class GameManager : MonoBehaviour
         if(Player!= null)
         {
             height = Player.GetComponent<Transform>().position.y;
-            height = ((int)(height) > 0 ? 23 : 0);
-            position = pos_name[(int)(height) > 0 ? 23 : 0];
+            (height) = (int)((height) > 0f ? (int)(23) : (int)(0));
+            position = pos_name[(int)(height) > 0 ? 1 : 0];
         }
     }
 
